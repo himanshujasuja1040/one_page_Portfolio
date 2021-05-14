@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">   
+
+<title>PortFolio</title>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap'); */
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+}
+.container{
+    background-color: #aaa;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.container-down{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #aaa;
+
+}
+.main{
+    transform: rotate(-2deg);
+    width: 80%;
+    height: 90vh;
+    background-color: #000;
+    position: absolute;
+    top: 5vh;
+    left:5%;
+    cursor: pointer;
+    transition: 2s ease;
+    overflow: hidden;
+
+}
+.main:hover{
+    width: 70%;
+    height: 60vh;
+}
+.main h2{
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+.Name{
+    width: 90vw;
+    position: absolute;
+    top: 50vh;
+    left: -50px;
+    font-size: 70px;
+}
+.Name1{
+    width: 90vw;
+    position: absolute;
+    top: 55vh;
+    left: 33px;
+    font-size: 70px;
+    transform: rotate(-2deg);
+}
+.colors{
+    color: white;
+}
+.logo-s{
+    text-align: center;
+    height: 47px;
+    width: 40px;
+    position: absolute;
+    font-size: 2em;
+    right: 30px;
+    top: 10px;
+    color: #000;
+
+}
+.logo-s p{
+    cursor: pointer;
+    transition: 0.5s all ease;
+}
+.logo-s p:hover{
+    transform: rotate(20deg);
+}
+.small-container{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.small-container h1{
+    font-family: 'Roboto', sans-serif;
+    animation: bounce 0.6s linear infinite;
+    cursor: pointer;
+    transition: 2s all ease-in-out;
+}
+@keyframes bounce{
+    0%{
+        margin-bottom: 15px;
+    }
+    50%{
+        margin-bottom: 5px;
+    }
+    100%{
+        margin-bottom: 15px;
+    }
+}
+.small-container h1:hover{
+    font-size: 4rem;
+   
+}
+.details-container{
+    position: relative;
+width: 100%;
+height: 40vh;
+margin: 2vh 0px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.left-detail-box{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    animation:left-movement 2s linear infinite;
+    transition: 2s all ease-in-out;
+    font-family: 'Goblin One', cursive;
+}
+@keyframes left-movement{
+        0%{
+            position:absolute;
+            left: 5%;
+        }
+        50%{
+            position:absolute;
+            left: 8%;
+        }
+        100%{
+            position:absolute;
+            left: 5%;
+        }
+}
+.right-detail-box{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    width: 40%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Goblin One', cursive;
+    animation:right-movement 2s linear infinite;
+    transition: 2s all ease-in-out;
+}
+@keyframes right-movement{
+        0%{
+            position:absolute;
+            right: 5%;
+        }
+        50%{
+            position:absolute;
+            right: 8%;
+        }
+        100%{
+            position:absolute;
+            right: 5%;
+        }
+}
+.details-container p{
+    font-size: 7rem;
+    text-shadow: 2px 2px 2px greenyellow;
+    color: white;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.footer-up{
+    width: 100%;
+    height: 100vh;
+    background-color: #aaa;
+    color: #000;
+}
+.upper-side{
+    width: 100%;
+    height: 10vh;
+    font-family: 'Roboto', sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 2rem;
+}
+.down-footer{
+    margin:5vh 0px;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.down-footer input{
+    height: 5vh;
+    width: 50%;
+    margin: 20px 0px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px white;
+}
+.details-author{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.details-author img,a{
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-s">
+            <p>&#10025;</p>
+        </div>
+        <div class="Name1">
+            <h1>HIMANSHU JASUJA</h1>
+        </div>
+        <div class="main">
+            <h2>PORTFOLIO</h2>
+            <div class="Name colors">
+                <h1>HIMANSHU JASUJA</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-down">
+        <div class="small-container">
+           <h1> WEB DEVELOPER AND DESIGNER</h1>
+        </div>
+        <div class="details-container">
+            <div class="left-detail-box">
+                    <img src="https://directory.edugorilla.com/wp-content/uploads/sites/6/2018/01/4553d9b2ee0b57e68db6ad3b8538cad5-1.jpeg" alt="SCHOOL">
+            </div>
+            <!-- <p>
+                &#8699;
+            </p> -->
+            <div class="right-detail-box">
+                <h1>SCHOOL</h1>
+                <h2>SRI GURU NANAK PUBLIC SCHOOL</h2>
+                <h4>ADARSH NAGAR , DELHI-110033</h4>
+            </div>
+        </div>
+        <div class="details-container">
+            <div class="left-detail-box">
+                <h1>COLLEGE</h1>
+                <h2>DTU</h2>
+                <h4>DELHI</h4>
+            </div>
+            <!-- <p>&#8698;</p> -->
+            <div class="right-detail-box">
+                <img src="https://images.indianexpress.com/2020/08/DTU.jpg" alt="COLLEGE">
+            </div>
+        </div>
+    </div>
+    <div class="footer-up">
+        <div class="upper-side">
+                <h1>LETS CONNECT </h1>
+        </div>
+        <div class="down-footer">
+        
+                <input type="text" placeholder="ENTER YOUR NAME">
+                <input type="email" placeholder="ENTER YOUR EMAIL">
+                <input type="text" placeholder="ENTER YOUR COMMENT" aria-disabled="true">
+    
+        </div>
+        <div class="details-author">
+            <h5>HIMANSHU JASUJA</h5>
+            <h6>himanshujasuja1040@gmail.com</h6>
+            <div class="images">
+               <a href="https://www.facebook.com/himanshu.jasuja.378">
+                <img src="./facebook.png" alt="#">
+               </a> 
+               <a href="https://www.instagram.com/himanshu__jasuja_/">
+                <img src="./instagram.png" alt="#">
+               </a> 
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
